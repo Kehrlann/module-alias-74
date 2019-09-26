@@ -1,0 +1,23 @@
+{
+  "name": "module-alias-ts-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node-dev -r tsconfig-paths/register --respawn --transpileOnly ./src/index.ts",
+    "prod": "npm run build && node -r ./prod-paths.js ./dist/index.js",
+    "build": "NODE_ENV=production npm run build-ts",
+    "build-ts": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "typescript": "^3.6.3",
+    "tsconfig-paths": "^3.9.0"
+  }
+}

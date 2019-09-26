@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@util": ["util"]
+    },
+    "allowSyntheticDefaultImports": true, 
+    "esModuleInterop": true 
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
